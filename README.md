@@ -23,26 +23,26 @@ By leveraging algorithms such as Support Vector Machine, Naive Bayes, and Random
 
 ### Prediction Page
 
-![Prediction Page](prediction_page.png)
+![Prediction Page](Prediction_page.png)
 
 ### Positive Result
 
-![Positive Result](positive_result.png)
+![Positive Result](Positive_result.png)
 
 ### Negative Result
 
-![Negative Result](negative_result.png)
+![Negative Result](Negative_result.png)
 
 ### Based on Accuracy
 
-![Based on Accuracy Result](accuracy_based_result.png)
+![Based on Accuracy Result](Accuracy_based_result.png)
 
 
 ## Accuracy Comparison
 
 The project evaluates the performance of each machine learning model based on accuracy.
 
-![Based on Accuracy Result](accuracy.png)
+![Based on Accuracy Result](Accuracy.png)
 
 
 ## Contributing

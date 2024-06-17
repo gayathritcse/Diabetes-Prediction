@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result</title>
+        <style>
+            h1 {
+                color: #f9f4f4;
+                text-align: center;
+                margin-top: 60px;
+            }
+
+
+            .details {
+                color: #10247b;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+
+            h2 {
+                font-size: 26px;
+                font-family: Arial, sans-serif;
+                margin-bottom: 10px;
+                align-items: center;
+                text-align: center;
+                color: #090e0f;
+
+            }
+            form {
+                margin: 0 auto;
+                max-width: 600px;
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            h5 {
+                font-size: 27px;
+                font-family: Arial, sans-serif;
+                align-items: center;
+                text-align: center;
+                color: #06607e;
+            }
+
+            h6 {
+                font-size: 15px;
+                font-family: Arial, sans-serif;
+                align-items: center;
+                text-align: center;
+                color: #031b23;
+            }
+
+            .div_container {
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            .header {
+                background-color: #4CAF50;
+                padding: 1rem;
+            }
+
+            .header .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .header-brand {
+                color: #fff;
+                font-size: 1.5rem;
+                text-decoration: none;
+                text-align: center;
+            }
+
+
+            .main-content {
+                display: flex;
+                /* flex: 1; */
+            }
+
+            .div {
+                border: 1px solid rgb(25, 115, 164);
+                padding: 5px;
+                width: 100%;
+                background-color: rgb(234, 255, 251);
+                margin: 15px;
+                align-items: center;
+            }
+
+
+            .button {
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+     
+            .button:hover {
+                background-color: #45a049;
+            }
+
+
+            .button-primary {
+                background-color: #008CBA;
+            }
+
+            .button-primary:hover {
+                background-color: #007B9E;
+                /* Darker blue */
+            }
+
+            .footer {
+                background-color: #4CAF50;
+                color: #fff;
+                text-align: center;
+                padding: 1rem;
+                margin-top: auto;
+            }
+
+            .footer .container {
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            h1 {
+                color: #f9f4f4;
+                text-align: center;
+                margin-top: 55px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <a class="header-brand">Diabetes Prediction Using Machine Learning Techniques</a>
+               
+            </div>
+        </header>
+
+            <form action="{% url 'home' %}" method="get" class="form">
+                <button type="submit" class="button button-primary">Home</button>
+            </form>
+
+        <h1 class="details">RESULT</h1><br>
+        <!-- Main Content -->
+        <div class="main-content">
+
+            <div name="div1" class="div">
+                <h2>SUPPORT VECTOR MACHINE</h2>
+                <h5>{{Print1}}</h5>
+                <h6>Accuracy : 0.825</h6>
+            </div>
+            <div name="div2" class="div">
+                <h2>NAIVE BAYES ALGORITHM</h2>
+                <h5>{{Print2}}</h5>
+                <h6>Accuracy : 0.7928571425871428</h6>
+            </div>
+            <div name="div3" class="div">
+                <h2>RANDOM FOREST ALGORITHM</h2>
+                <h5>{{Print3}}</h5>
+                <h6>Accuracy : 0.9607142857142857</h6>
+            </div>
+        </div>
+        <!-- <button type="button" class="button button-primary" href="{{'home.html'}}">Return To Home</button> -->
+
+        
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Diabetes Prediction. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

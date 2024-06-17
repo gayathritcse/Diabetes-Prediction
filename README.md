@@ -12,7 +12,7 @@ By leveraging algorithms such as Support Vector Machine, Naive Bayes, and Random
 - Support Vector Machine (SVM): A supervised learning algorithm that can classify cases by finding a decision boundary.
 - Naive Bayes (NB): A probabilistic classifier based on Bayes' theorem with strong independence assumptions between the features.
 - Random Forest (RF): An ensemble learning method that operates by constructing multiple decision trees during training and outputting the mode of the classes.
-
+ 
 ### Features
 
 - Prediction Accuracy: Compares the accuracy of different machine learning algorithms.

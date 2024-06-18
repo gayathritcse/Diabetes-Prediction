@@ -23,7 +23,7 @@ By leveraging algorithms such as Support Vector Machine, Naive Bayes, and Random
 
 ### Prediction Page
 
-![Prediction Page](Prediction_Page.png)
+![Prediction Page](Prediction_result.png)
 
 ### Positive Result
 

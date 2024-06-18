@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diabetes Prediction</title>
+        <style>
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            .header {
+                background-color: #4CAF50;
+                padding: 1rem;
+            }
+
+            .header .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .header-brand {
+                color: #fff;
+                font-size: 1.5rem;
+                text-decoration: none;
+                text-align: center;
+            }
+
+
+            .main-content {
+                margin-left: 20px;
+                padding: 20px;
+                flex: 1;
+            }
+
+            .details {
+                color: #10247b;
+                text-align: center;
+                margin-top: 50px;
+            }
+
+            form {
+                margin: 0 auto;
+                max-width: 600px;
+                padding: 20px;
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                border-radius: 5px;
+            }
+
+            button {
+                font-size: 20px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #f3f7f9;
+                color: #077afe;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #a6acb0;
+            }
+
+
+            input[type=text],
+            select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: #ffffff;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            .footer {
+                background-color: #4CAF50;
+                color: #fff;
+                text-align: center;
+                padding: 1rem;
+                margin-top: auto;
+            }
+
+            .footer .container {
+                max-width: 1000px;
+                margin: auto;
+            }
+
+            h1 {
+                color: #f9f4f4;
+                text-align: center;
+                margin-top: 55px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <a  class="header-brand">Diabetes Prediction Using Various Machine Learning Techniques</a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1 class="details">ENTER YOUR DETAILS</h1>
+            <form action="predict">
+                <label for="glucose">Glucose</label>
+                <input type="text" id="glucose" name="Glucose" placeholder="Glucose (mg/dL) eg. 80">
+
+                <label for="bmi">BMI</label>
+                <input type="text" id="bmi" name="BMI" placeholder="Body Mass Index (kg/m²) eg. 23.1">
+
+                <label for="age">Age</label>
+                <input type="text" id="age" name="Age" placeholder="Age (years) eg. 34">
+
+                <label for="blood-pressure">Blood Pressure</label>
+                <input type="text" id="blood-pressure" name="Blood Pressure" placeholder="Blood Pressure (mmHg) eg. 80">
+
+                <label for="insulin">Insulin</label>
+                <input type="text" id="insulin" name="Insulin" placeholder="Insulin Level (IU/mL) eg. 80">
+
+                <label for="skin-thickness">Skin Thickness</label>
+                <input type="text" id="skin-thickness" name="Skin Thickness" placeholder="Skin Thickness (mm) eg. 20">
+
+                <label for="dpf">Diabetes Pedigree Function</label>
+                <input type="text" id="dpf" name="Diabetes Pedigree Function"
+                    placeholder="Diabetes Pedigree Function eg. 0.52">
+
+                <label for="pregnancies"> Pregnancies</label>
+                <input type="text" id="pregnancies" name="Pregnancies" placeholder="Number of Pregnancies eg. 0">
+
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Diabetes Prediction. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

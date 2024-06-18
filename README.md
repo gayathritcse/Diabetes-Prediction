@@ -35,7 +35,7 @@ By leveraging algorithms such as Support Vector Machine, Naive Bayes, and Random
 
 ### Based on Accuracy
 
-![Based on Accuracy Result](Accuracy_based_result.png)
+![Based on Accuracy Result](Accuracy_Based_Result.png)
 
 
 ## Accuracy Comparison
